@@ -15,9 +15,15 @@ namespace la_mia_pizzeria_post.Models
 
         [Key]
         public long Id { get; set; }
+        [Url]
         public string Img { get; set; }
+        [Required]
+        [StringLength(25)]
         public string Name { get; set; }
+        [StringLength(100)]
         public string Description { get; set; }
+        [Required]
+        [Range(1, 20)]
         public double Price { get; set; }
     }
 }
