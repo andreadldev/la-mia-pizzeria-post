@@ -4,6 +4,7 @@ namespace la_mia_pizzeria_post.Models
 {
     public class Pizza
     {
+        public Pizza() { }
         public Pizza(string img, string name, string description, double price)
         {
             Img = img;
